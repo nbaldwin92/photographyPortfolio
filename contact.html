@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://getbootstrap.com/docs/4.1/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="style/style.css">
+  <link rel="stylesheet" href="style/animate.css">
+  <title>Photography Page</title>
+</head>
+
+<body>
+
+  <!-- Mobile NavBar -->
+
+  <nav id="mobileNavBar" class="navbar navbar-light bg-faded">
+            <button id="toggler" class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <span id="menuButton">Menu</span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+              <div class="navbar-nav">
+                <a class="nav-item nav-link active" href="#">Home <span class="sr-only">(current)</span></a>
+                <a class="nav-item nav-link" href="#">Features</a>
+                <a class="nav-item nav-link" href="#">Pricing</a>
+                <a class="nav-item nav-link disabled" href="#">Disabled</a>
+              </div>
+            </div>
+          </nav>
+
+
+
+  <!-- End Mobile NavBar -->
+
+
+
+  <div class="container-fluid fade-in-fwd">
+    <div class="row">
+
+      <!-- Logo -->
+      <div class="col-md-12">
+        <img id="logo" class="mx-auto d-block img-fluid" alt="Logo" src="assets/logo.png" />
+        <!-- End Logo -->
+
+
+        <!-- NavBar Begin -->
+
+        <nav id="fullNav" class="navbar" style="padding: 5px">
+          <br>
+          <ul class="List">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="pricing.html">Pricing</a></li>
+            <li><a href="albums.html">Albums</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+
+        </nav>
+
+      </div>
+    </div>
+
+
+
+    <div class="row">
+
+      <div class="col-lg-4">
+      <h2>Contact Me</h2>
+
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quis quos laborum facilis eius aliquid, dicta quisquam eaque vel. Adipisci, quis odit consequuntur odio placeat temporibus error vitae, suscipit voluptatum sequi. <br> <br> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dicta reiciendis, sunt. Dolore ex officia vero eius sapiente quos, obcaecati, possimus quis, modi dignissimos veniam numquam iusto voluptate! Placeat, eum, aut?Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vel natus vero, odit est. Delectus ab nemo, quis quisquam sint modi, dignissimos itaque consectetur reiciendis dolorum, odit impedit tempora fuga eaque.</p>
+      </div>
+
+
+      <!-- Begin Form -->
+      <div class="col-lg-8">
+        <form id="contact-form" method="post" action="contact.php" role="form">
+
+          <div class="messages"></div>
+
+          <div class="controls">
+
+            <div class="row">
+              <div class="col-md-6">
+                <div class="form-group">
+                  <label for="form_name">Firstname *</label>
+                  <input id="form_name" type="text" name="name" class="form-control" placeholder="Please enter your firstname *" required="required" data-error="Firstname is required.">
+                  <div class="help-block with-errors"></div>
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="form-group">
+                  <label for="form_lastname">Lastname *</label>
+                  <input id="form_lastname" type="text" name="surname" class="form-control" placeholder="Please enter your lastname *" required="required" data-error="Lastname is required.">
+                  <div class="help-block with-errors"></div>
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-md-6">
+                <div class="form-group">
+                  <label for="form_email">Email *</label>
+                  <input id="form_email" type="email" name="email" class="form-control" placeholder="Please enter your email *" required="required" data-error="Valid email is required.">
+                  <div class="help-block with-errors"></div>
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="form-group">
+                  <label for="form_need">Please specify your need *</label>
+                  <select id="form_need" name="need" class="form-control" required="required" data-error="Please specify your need.">
+                    <option value=""></option>
+                    <option value="Request quotation">Photography Session</option>
+                    <option value="Request order status">Price-Related Question</option>
+                    <option value="Other">Other</option>
+                  </select>
+                  <div class="help-block with-errors"></div>
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-md-12">
+                <div class="form-group">
+                  <label for="form_message">Message *</label>
+                  <textarea id="form_message" name="message" class="form-control" placeholder="Message for me *" rows="4" required="required" data-error="Please, leave us a message."></textarea>
+                  <div class="help-block with-errors"></div>
+                </div>
+              </div>
+              <div class="col-md-12">
+                <input type="submit" class="btn btn-success btn-send" value="Send message">
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-md-12">
+                <p class="text-muted">
+                  <strong>*</strong> These fields are required.
+              </div>
+            </div>
+          </div>
+
+        </form>
+
+
+        <!-- End form -->
+
+      </div>
+    </div>
+
+
+
+    <!-- Footer Begin -->
+    <footer class="footer">
+      <div class="container">
+        <a href="#"><i class="fa fa-facebook"></i></a>
+        <a href="#"><i class="fa fa-twitter"></i></a>
+        <a href="#"><i class="fa fa-linkedin"></i></a>
+        <a href="#"><i class="fa fa-google-plus"></i></a>
+        <a href="#"><i class="fa fa-skype"></i></a>
+      </div>
+    </footer>
+    <!-- Footer End -->
+
+
+  </div>
+
+  <script src="script.js"></script>
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+</body>
+
+</html>
